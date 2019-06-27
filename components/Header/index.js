@@ -2,7 +2,7 @@ import styles from './styles.scss';
 
 const Header = () => (
   <header>
-    <h1 className={styles.example}>Hello world!</h1>
+    <h1 className={styles.example}>Header</h1>
   </header>
 );
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import NextHead from 'next/head';
 
 import icon from './icon180x180.png';
-import styles from './styles.scss';
+import './styles.scss';
 
 const Head = ({ title, description }) => (
   <NextHead>
@@ -11,7 +11,6 @@ const Head = ({ title, description }) => (
     <meta name="description" content={description} />
     <link rel="icon" href={icon} />
     <link rel="apple-touch-icon" href={icon} />
-    <link href={styles} rel="stylesheet" />
   </NextHead>
 );
 
