@@ -2550,6 +2550,14 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
+file-loader@^4.0.0:
+  version "4.0.0"
+  resolved "http://artifactory.otenv.com/artifactory/api/npm/npm-virtual/file-loader/-/file-loader-4.0.0.tgz#c3570783fefb6e1bc0978a856f4bf5825b966c2a"
+  integrity sha1-w1cHg/77bhvAl4qFb0v1gluWbCo=
+  dependencies:
+    loader-utils "^1.2.2"
+    schema-utils "^1.0.0"
+
 fill-range@^4.0.0:
   version "4.0.0"
   resolved "http://artifactory.otenv.com/artifactory/api/npm/npm-virtual/fill-range/-/fill-range-4.0.0.tgz#d544811d428f98eb06a63dc402d2403c328c38f7"
@@ -3540,7 +3548,7 @@ loader-utils@1.1.0:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
 
-loader-utils@1.2.3, loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
+loader-utils@1.2.3, loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.2, loader-utils@^1.2.3:
   version "1.2.3"
   resolved "http://artifactory.otenv.com/artifactory/api/npm/npm-virtual/loader-utils/-/loader-utils-1.2.3.tgz#1ff5dc6911c9f0a062531a4c04b609406108c2c7"
   integrity sha1-H/XcaRHJ8KBiUxpMBLYJQGEIwsc=
@@ -3729,7 +3737,7 @@ mime@1.4.1:
   resolved "http://artifactory.otenv.com/artifactory/api/npm/npm-virtual/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
   integrity sha1-Eh+evEnjdm8xGnbh+hyAA8SwOqY=
 
-mime@^2.3.1:
+mime@^2.3.1, mime@^2.4.4:
   version "2.4.4"
   resolved "http://artifactory.otenv.com/artifactory/api/npm/npm-virtual/mime/-/mime-2.4.4.tgz#bd7b91135fc6b01cde3e9bae33d659b63d8857e5"
   integrity sha1-vXuRE1/GsBzePpuuM9ZZtj2IV+U=
@@ -3896,6 +3904,14 @@ neo-async@^2.5.0:
   version "2.6.1"
   resolved "http://artifactory.otenv.com/artifactory/api/npm/npm-virtual/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha1-rCetpmFn+ohJpq3dg39rGJrSCBw=
+
+next-images@^1.1.2:
+  version "1.1.2"
+  resolved "http://artifactory.otenv.com/artifactory/api/npm/npm-virtual/next-images/-/next-images-1.1.2.tgz#de08706154953aaaffda67a3bc83d76be145b174"
+  integrity sha1-3ghwYVSVOqr/2mejvIPXa+FFsXQ=
+  dependencies:
+    file-loader "^4.0.0"
+    url-loader "^2.0.0"
 
 next-server@8.1.0:
   version "8.1.0"
@@ -5926,6 +5942,15 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "http://artifactory.otenv.com/artifactory/api/npm/npm-virtual/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+url-loader@^2.0.0:
+  version "2.0.1"
+  resolved "http://artifactory.otenv.com/artifactory/api/npm/npm-virtual/url-loader/-/url-loader-2.0.1.tgz#6c47fc7090e3d48939e01fe3c6efcba5938dcec5"
+  integrity sha1-bEf8cJDj1Ik54B/jxu/LpZONzsU=
+  dependencies:
+    loader-utils "^1.1.0"
+    mime "^2.4.4"
+    schema-utils "^1.0.0"
 
 url@0.11.0, url@^0.11.0:
   version "0.11.0"
