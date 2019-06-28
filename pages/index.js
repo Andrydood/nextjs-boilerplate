@@ -5,7 +5,7 @@ const Index = () => (
   <div>
     <Head title="Title of the page" description="The description of the page" />
     <Header />
-    <h2>Welcome to site name inc.</h2>
+    <h2>Index Page</h2>
   </div>
 );
 
