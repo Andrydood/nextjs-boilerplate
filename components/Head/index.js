@@ -8,7 +8,7 @@ const Head = ({ title, description }) => (
   <NextHead>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <title>{title}</title>
-    <meta name="description" content={description} />
+    {description ? <meta name="description" content={description} /> : null}
     <link rel="icon" href={icon} />
     <link rel="apple-touch-icon" href={icon} />
   </NextHead>
@@ -22,7 +22,11 @@ Head.propTypes = {
   /*
   Short description of the document (limit to 150 characters)
   */
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
+};
+
+Head.defaultProps = {
+  description: null,
 };
 
 export default Head;

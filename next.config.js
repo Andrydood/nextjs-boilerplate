@@ -4,7 +4,13 @@ const withImages = require('next-images');
 
 module.exports = withImages(withSass({
   webpack(config) {
-    config.resolve.alias.components = path.join(__dirname, 'components');
+    const aliases = {
+      '~components': path.join(__dirname, 'components'),
+      '~store': path.join(__dirname, 'store'),
+    };
+
+    config.resolve.alias = Object.assign(config.resolve.alias, aliases);
+
     return config;
   },
   cssModules: true,

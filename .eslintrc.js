@@ -3,7 +3,8 @@ module.exports = {
     "import/resolver": {
       "alias": {
         "map": [
-          ["components", "./components"]
+          ["~components", "./components"],
+          ["~store", "./store"]
         ],
         "extensions": [ ".js", ".scss", ".json"]
       }
@@ -12,7 +13,8 @@ module.exports = {
   "rules": {
       "react/react-in-jsx-scope": "off",
       "react/jsx-filename-extension": "off",
-      "no-param-reassign": "off"
+      "no-param-reassign": "off",
+      "jsx-a11y/anchor-is-valid": "off"
   },
   "extends": ["airbnb"]
 }
