@@ -1,4 +1,4 @@
-import actionTypes from '~store/counter/actionTypes';
+import { INCREMENT, DECREMENT } from '~store/counter/actionTypes';
 
-export const incrementCount = () => ({ type: actionTypes.INCREMENT });
-export const decrementCount = () => ({ type: actionTypes.DECREMENT });
+export const incrementCount = () => ({ type: INCREMENT });
+export const decrementCount = () => ({ type: DECREMENT });
