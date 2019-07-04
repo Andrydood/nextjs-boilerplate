@@ -7,6 +7,7 @@ module.exports = withImages(withSass({
     const aliases = {
       '~components': path.join(__dirname, 'components'),
       '~store': path.join(__dirname, 'store'),
+      '~lib': path.join(__dirname, 'lib'),
     };
 
     config.resolve.alias = Object.assign(config.resolve.alias, aliases);
