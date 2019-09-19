@@ -1,25 +1,19 @@
+import { createReducer } from '~lib/redux';
+
 import { INCREMENT, DECREMENT } from '~store/counter/actionTypes';
 
 const initialState = {
   count: 0,
 };
 
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case INCREMENT:
-      return Object.assign({}, state, {
-        count: state.count + 1,
-      });
-
-    case DECREMENT:
-      return Object.assign({}, state, {
-        count: state.count - 1,
-      });
-
-    default:
-      return state;
-  }
-};
+const reducer = createReducer(initialState, {
+  INCREMENT: state => Object.assign({}, state, {
+    count: state.count + 1,
+  }),
+  DECREMENT: state => Object.assign({}, state, {
+    count: state.count - 1,
+  }),
+});
 
 
 export default reducer;
