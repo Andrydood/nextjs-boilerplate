@@ -7,10 +7,10 @@ const initialState = {
 };
 
 const reducer = createReducer(initialState, {
-  INCREMENT: state => Object.assign({}, state, {
+  [INCREMENT]: state => Object.assign({}, state, {
     count: state.count + 1,
   }),
-  DECREMENT: state => Object.assign({}, state, {
+  [DECREMENT]: state => Object.assign({}, state, {
     count: state.count - 1,
   }),
 });
